@@ -2,7 +2,8 @@
 // Результат присвойте переменной sum
 
 // your code
-let sum=0
+let sum
+
 while (i<=20){
     sum=sum+i;
     
