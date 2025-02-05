@@ -6,6 +6,3 @@
 
 // your code
 let sum
-while(i<=20){
-  
-}
