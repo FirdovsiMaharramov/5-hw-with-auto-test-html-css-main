@@ -2,11 +2,4 @@
 // Результат присвойте переменной sum
 
 // your code
-let sum=0;
-let i=0;
-while (i<=20){
-    i++;
-    sum=sum+i;
-   
-}
-console.log(sum)
+
