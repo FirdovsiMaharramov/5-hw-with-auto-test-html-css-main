@@ -6,6 +6,6 @@ let sum
 
 while (i<=20){
     sum=sum+i;
-    
+    console.log(sum);  
 }
-console.log(sum);
+
