@@ -7,6 +7,7 @@
 
 // your code
 let factorial
+let i
 while(i<=10){
   factorial=factorial*i;
 }
