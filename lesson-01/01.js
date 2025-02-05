@@ -3,7 +3,7 @@
 
 // your code
 let sum
-
+let i 
 while (i<=20){
     sum=sum+i;
     console.log(sum);  
