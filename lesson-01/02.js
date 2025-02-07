@@ -6,12 +6,12 @@
 */
 
 // your code
-let  factorial=1;
+let  factroial=1;
 let i=1;
 while (i<=10){
   i++;
-  factorial=factroial*i;
+  factroial=factroial*i;
   
   
 }
-console.log(factorial)
+console.log(factroial)
