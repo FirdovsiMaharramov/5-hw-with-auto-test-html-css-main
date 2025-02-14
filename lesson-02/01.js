@@ -19,6 +19,12 @@ let isAccess
 if (!isAdmin && isVerifiedUser){
     isAccess=true
 }
+else if(isAdmin && !isVerifiedUser){
+    isAccess=false
+}
 else if(hasSpecialPermission && !hasTemporaryPass){
     isAccess=true
+}
+else if(!hasSpecialPermission && hasTemporaryPass){
+    isAccess=false
 }
