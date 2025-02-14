@@ -25,6 +25,6 @@ else if(!isVerifiedUser && !hasSpecialPermission){
 else if(hasSpecialPermission && !hasTemporaryPass){
     isAccess=true
 }
-else if(!hasSpecialPermission && hasTemporaryPass) {
+else if(!hasSpecialPermission && hasTemporaryPass && isVerifiedUser) {
     isAccess=false
 }
