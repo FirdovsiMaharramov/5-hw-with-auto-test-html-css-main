@@ -16,17 +16,9 @@ const hasTemporaryPass = false
 let isAccess
 
 // your code
-if (!isAdmin   ){
-    isAccess=true
 
-  
-}
- if( !isVerifiedUser && !hasSpecialPermission ){
-    isAccess=false
-}
-if(  isVerifiedUser && !hasTemporaryPass){
-    isAccess=true
-}
-if(  isVerifiedUser && !hasSpecialPermission ) {
-    isAccess=false
-}
+
+// your code
+isAccess = ((isAdmin || isVerifiedUser) && (hasSpecialPermission || hasTemporaryPass));
+const message = isAccess ? 'Access granted' : 'Access denied';
+console.log(message);
