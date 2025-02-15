@@ -22,7 +22,7 @@ if (!isAdmin && isVerifiedUser){
 else if(!isVerifiedUser && !hasSpecialPermission){
     isAccess=false
 }
-else if(hasSpecialPermission && !hasTemporaryPass){
+else if( isVerifiedUser&& !hasTemporaryPass){
     isAccess=true
 }
 else if( !hasSpecialPermission  && hasTemporaryPass) {
