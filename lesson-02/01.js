@@ -22,9 +22,9 @@ if (!isAdmin || isVerifiedUser ){
 else if( !isVerifiedUser  || !hasSpecialPermission || hasTemporaryPass){
     isAccess=false
 }
-else if( !hasTemporaryPass && !hasTemporaryPass){
+else if( isVerifiedUser && !hasTemporaryPass){
     isAccess=true
 }
-else if( isVerifiedUser || hasTemporaryPass || !hasSpecialPermission) {
+else if( isVerifiedUser && hasTemporaryPass && !hasSpecialPermission) {
     isAccess=false
 }
