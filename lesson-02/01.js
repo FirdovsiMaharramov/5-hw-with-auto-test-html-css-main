@@ -21,12 +21,12 @@ if ((!isAdmin || isVerifiedUser) &&hasSpecialPermission  ){
 
   
 }
-else if( (isAdmin || !isVerifiedUser) && !hasSpecialPermission && hasTemporaryPass){
+else if( !isVerifiedUser && !hasSpecialPermission && hasTemporaryPass){
     isAccess=false
 }
-else if( hasSpecialPermission || !hasTemporaryPass){
+else if( isVerifiedUser && !hasTemporaryPass){
     isAccess=true
 }
-else if( (isAdmin || !isVerifiedUser) && hasTemporaryPass && !hasSpecialPermission) {
+else if(  isVerifiedUser && hasTemporaryPass && !hasSpecialPermission) {
     isAccess=false
 }
