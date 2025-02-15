@@ -16,15 +16,15 @@ const hasTemporaryPass = false
 let isAccess
 
 // your code
-if (!isAdmin &&hasSpecialPermission  ){
+if (!isAdmin===hasSpecialPermission  ){
     isAccess=true
 
   
 }
-else if( !isVerifiedUser && !hasSpecialPermission ){
+else if( !isVerifiedUser===!hasSpecialPermission ){
     isAccess=false
 }
-else if(  isVerifiedUser && !hasTemporaryPass){
+else if(  isVerifiedUser===!hasTemporaryPass){
     isAccess=true
 }
 else if(  isVerifiedUser && !hasSpecialPermission) {
