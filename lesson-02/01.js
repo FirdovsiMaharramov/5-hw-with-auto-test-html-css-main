@@ -19,12 +19,12 @@ let isAccess
 if (!isAdmin && hasSpecialPermission){
     isAccess=true
 }
-else if(isAdmin &&!isVerifiedUser && !hasSpecialPermission){
+else if(!isVerifiedUser && !hasSpecialPermission){
     isAccess=false
 }
-else if(isAdmin &&isVerifiedUser && !hasTemporaryPass){
+else if(isVerifiedUser && !hasTemporaryPass){
     isAccess=true
 }
-else if( isAdmin &&!hasSpecialPermission && hasTemporaryPass && isVerifiedUser) {
+else if( !hasSpecialPermission  && isVerifiedUser) {
     isAccess=false
 }
