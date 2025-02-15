@@ -19,7 +19,7 @@ let isAccess
 if (!isAdmin && isVerifiedUser ){
     isAccess=true
 }
-else if( !isVerifiedUser&& !hasSpecialPermission){
+else if( !isVerifiedUser&& !hasSpecialPermission && hasTemporaryPass){
     isAccess=false
 }
 else if( !hasTemporaryPass && !hasTemporaryPass){
