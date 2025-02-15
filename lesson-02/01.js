@@ -24,7 +24,7 @@ if ((!isAdmin || isVerifiedUser) &&hasSpecialPermission  ){
 else if( !isVerifiedUser && !hasSpecialPermission && hasTemporaryPass){
     isAccess=false
 }
-else if( isVerifiedUser && !hasTemporaryPass){
+else if( (!isAdmin || isVerifiedUser) && !hasTemporaryPass){
     isAccess=true
 }
 else if(  isVerifiedUser && hasTemporaryPass && !hasSpecialPermission) {
